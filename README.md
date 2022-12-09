@@ -21,13 +21,29 @@ The abbreviation LEMP stands for Linux Operating System, Nginx (pronounced engin
 * First, update the server using the command
 
     `sudo apt update`
+
+    ![EC2](./images/update2.jpeg)
+
 * Now, install nginx using the command below
 
     `sudo apt install nginx`
-
+      ![EC2](./images/nginx3.jpeg)
 * Check the status of the nginx service
 
     `sudo systemctl status nginx`
+    
+* Access the server locally in the ubuntu shell using cURL
 
+    `curl http://localhost:80`
+
+        or using the ip address in the command below
+    `curl http://127.0.0.1:80`
+
+* Open a web browser of your choice and try to access following url 
+`http://<Public-IP-Address>:80`
+
+* You can also retrieve your ip address instead of checking the aws console using cURL as in the command below
+    `curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
+     ![EC2](./images/curl4.jpeg)
 
 
