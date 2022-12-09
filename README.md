@@ -76,6 +76,28 @@ Type the root db password when prompted for a password
 
 >`mysql> exit`
 
+### Step 4 - Installing php
+You have Nginx installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.
+
+* First, install these two packages using one command
+`sudo apt install php-fpm php-mysql -y`
+
+![EC2](./images/php9.jpeg)
+
+### Step 5 - Configuring Nginx To Use PHP Processor
+When using the Nginx web server, we can create server blocks (similar to virtual hosts in Apache) to encapsulate configuration details and host more than one domain on a single server. Here, we will use projectLEMP as an example domain name.
+
+* Create the root web directory for your domain as follows:
+
+`sudo mkdir /var/www/projectLEMP`
+
+![EC2](./images/php10.jpeg)
+
+* Next, Give recursive ownership of the directory with the $USER environment variable, which will reference your current system user:
+
+
+
+
 
 
 
