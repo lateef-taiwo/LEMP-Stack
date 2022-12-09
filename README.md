@@ -4,6 +4,9 @@ The abbreviation LEMP stands for Linux Operating System, Nginx (pronounced engin
 
 ![lemp image](./images/lemp.jpeg)
 
+<!-- Horizontal RUle -->
+---
+___
 ### Step 1: Create a Virtual Server on AWS
 <!-- UL -->
 * Login to the AWS console
@@ -17,6 +20,9 @@ The abbreviation LEMP stands for Linux Operating System, Nginx (pronounced engin
 
 ![EC2](./images/EC20.jpeg)
 
+<!-- Horizontal RUle -->
+---
+___
 ### Step 2: Installing Apache and Updating the Firewall
 * First, update the server using the command
 
@@ -50,6 +56,9 @@ The abbreviation LEMP stands for Linux Operating System, Nginx (pronounced engin
     `curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
      ![EC2](./images/curl4.jpeg)
 
+<!-- Horizontal RUle -->
+---
+___
 ### Step 3 - Installing MySQL
 Now that you have a web server up and running, you need to install a Relational Database Management System (RDBMS) to be able to store and manage data for your site. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.
 
@@ -76,6 +85,9 @@ Type the root db password when prompted for a password
 
 >`mysql> exit`
 
+<!-- Horizontal RUle -->
+---
+___
 ### Step 4 - Installing php
 You have Nginx installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.
 
@@ -84,6 +96,9 @@ You have Nginx installed to serve your content and MySQL installed to store and 
 
 ![EC2](./images/php9.jpeg)
 
+<!-- Horizontal RUle -->
+---
+___
 ### Step 5 - Configuring Nginx To Use PHP Processor
 When using the Nginx web server, we can create server blocks (similar to virtual hosts in Apache) to encapsulate configuration details and host more than one domain on a single server. Here, we will use projectLEMP as an example domain name.
 
@@ -149,7 +164,7 @@ press esc key, :wq! to save and exit.
 
     ![EC2](./images/php14.jpeg)
 
-    
+
 
 
 
