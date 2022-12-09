@@ -37,13 +37,47 @@ The abbreviation LEMP stands for Linux Operating System, Nginx (pronounced engin
     `curl http://localhost:80`
 
         or using the ip address in the command below
-    `curl http://127.0.0.1:80`
+    >`curl http://127.0.0.1:80`
 
 * Open a web browser of your choice and try to access following url 
-`http://<Public-IP-Address>:80`
 
+    >`http://<Public-IP-Address>:80`
+
+![EC2](./images/browser5.jpeg)
+
+    
 * You can also retrieve your ip address instead of checking the aws console using cURL as in the command below
     `curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
      ![EC2](./images/curl4.jpeg)
+
+### Step 3 - Installing MySQL
+Now that you have a web server up and running, you need to install a Relational Database Management System (RDBMS) to be able to store and manage data for your site. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.
+
+* install my-sql server using the command below
+
+>`sudo apt install mysql-server`
+
+![EC2](./images/mysql6.jpeg)
+
+* When the installation is finished, log in to the MySQL console by typing:
+
+>`sudo mysql -root -p`
+
+Type the root db password when prompted for a password
+
+![EC2](./images/mysql7.jpeg)
+
+* Start the interactive script by running:
+>`$ sudo mysql_secure_installation`
+
+![EC2](./images/mysql8.jpeg)
+
+* To exit the MySQL console, type:
+
+>`mysql> exit`
+
+
+
+
 
 
