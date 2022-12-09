@@ -18,7 +18,16 @@ The abbreviation LEMP stands for Linux Operating System, Nginx (pronounced engin
 ![EC2](./images/EC20.jpeg)
 
 ### Step 2: Installing Apache and Updating the Firewall
-First, update the server using the command
+* First, update the server using the command
 
-`sudo apt update`
+    `sudo apt update`
+* Now, install nginx using the command below
+
+    `sudo apt install nginx`
+
+* Check the status of the nginx service
+
+    `sudo systemctl status nginx`
+
+
 
