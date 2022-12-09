@@ -143,8 +143,17 @@ press esc key, :wq! to save and exit.
 
     ![EC2](./images/php13.jpeg)
 
+* We also need to disable default Nginx host that is currently configured to listen on port 80, for this run:
+
+    `sudo unlink /etc/nginx/sites-enabled/default`
+
+    ![EC2](./images/php14.jpeg)
 
     
+
+
+
+
 
 
 
