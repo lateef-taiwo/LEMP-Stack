@@ -95,12 +95,15 @@ When using the Nginx web server, we can create server blocks (similar to virtual
 
 * Next, Give recursive ownership of the directory with the $USER environment variable, which will reference your current system user:
 
+![EC2](./images/php11.jpeg)
+
+
 * Now, open a new configuration file in Nginx’s sites-available directory using your preferred command-line editor. Here I use vim editor, you can use your preffered text editor, vim automatically creates a file and requires sudo privileges to save configs
 
 `sudo vim /etc/nginx/sites-available/projectLEMP`
 
  Paste in the following bare-bones configuration:
- 
+
             #/etc/nginx/sites-available/projectLEMP
         
         server {
@@ -124,9 +127,29 @@ When using the Nginx web server, we can create server blocks (similar to virtual
             }
         
         }
-`
- 
-  
+
+
+press esc key, :wq! to save and exit.
+
+* Next, Activate your configuration by linking to the config file from Nginx’s sites-enabled directory:
+
+    `sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
+
+  ![EC2](./images/php12.jpeg)
+
+  You can test your configuration for syntax errors by typing:
+
+    `sudo nginx -t`
+
+    ![EC2](./images/php13.jpeg)
+
+
+    
+
+
+
+
+
 
 
 
