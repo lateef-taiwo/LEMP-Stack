@@ -95,7 +95,38 @@ When using the Nginx web server, we can create server blocks (similar to virtual
 
 * Next, Give recursive ownership of the directory with the $USER environment variable, which will reference your current system user:
 
+* Now, open a new configuration file in Nginx’s sites-available directory using your preferred command-line editor. Here I use vim editor, you can use your preffered text editor, vim automatically creates a file and requires sudo privileges to save configs
 
+`sudo vim /etc/nginx/sites-available/projectLEMP`
+
+ Paste in the following bare-bones configuration:
+ 
+            #/etc/nginx/sites-available/projectLEMP
+        
+        server {
+            listen 80;
+            server_name projectLEMP www.projectLEMP;
+            root /var/www/projectLEMP;
+        
+            index index.html index.htm index.php;
+        
+            location / {
+                try_files $uri $uri/ =404;
+            }
+        
+            location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+            }
+        
+            location ~ /\.ht {
+                deny all;
+            }
+        
+        }
+`
+ 
+  
 
 
 
