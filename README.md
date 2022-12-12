@@ -15,7 +15,7 @@ ___
 * Type a name e.g My_Lamp_Server
  Click create a new key pair, use any name of your choice as the name for the pem file and select .pem.
     * Linux/Mac users, choose .pem for use with openssh. This allows you to connect to your server using open ssh clients.
-    * For windows users choose .ppk for use with putty. Putty is a software that lets you connect remotely to servers
+    * For windows users choose .ppk for use with putty. Putty is a software that lets you connect to servers remotely.
 * Save your private key (.pem file) securely and do not share it with anyone! If you lose it, you will not be able to connect to your server ever again! 
 
 ![EC2](./images/EC20.jpeg)
@@ -53,7 +53,9 @@ ___
 
     
 * You can also retrieve your ip address instead of checking the aws console using cURL as in the command below
+
     `curl -s http://169.254.169.254/latest/meta-data/public-ipv4`
+    
      ![EC2](./images/curl4.jpeg)
 
 <!-- Horizontal RUle -->
