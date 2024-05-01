@@ -298,6 +298,7 @@ To confirm that the data was successfully saved to your table, run:
         } catch (PDOException $e) {
             print "Error!: " . $e->getMessage() . "<br/>";
             die();
+        }
 
 Save and close the file when you are done editing.
 
