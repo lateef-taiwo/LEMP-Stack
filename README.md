@@ -111,6 +111,7 @@ When using the Nginx web server, we can create server blocks (similar to virtual
 * Create the root web directory for your domain as follows:
 
 `sudo mkdir /var/www/projectLEMP`
+`cd /var/www/projectLEMP`
 
 ![EC2](./images/php10.jpeg)
 
