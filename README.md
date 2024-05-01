@@ -49,7 +49,7 @@ ___
 
     >`http://<Public-IP-Address>:80`
 
-![EC2](./images/browser5.jpeg)
+![EC2](./images/browser5.png)
 
     
 * You can also retrieve your ip address instead of checking the aws console using cURL as in the command below
