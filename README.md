@@ -214,7 +214,7 @@ ___
 
 * To create a new database, run the following command from your MySQL console:
 
-    `mysql> CREATE DATABASE `example_database`;`
+    `mysql> CREATE DATABASE example_database`
 
 * create a new user and grant him full privileges on the database you have just created. For security reasons I will be using a simple username and password which is different from the one in my actual configuration
 
