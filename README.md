@@ -74,7 +74,7 @@ Now that you have a web server up and running, you need to install a Relational 
 
 >`sudo mysql -root -p`
 
-Type the root db password when prompted for a password
+Type the root db password when prompted for a password. The default root db password is `PassWord.1`
 
 ![EC2](./images/mysql7.jpeg)
 
