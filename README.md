@@ -33,8 +33,7 @@ ___
 * Now, install nginx using the command below
 
     `sudo apt install nginx`
-    
-      ![EC2](./images/nginx3.jpeg)
+![EC2](./images/nginx3.jpeg)
 * Check the status of the nginx service
 
     `sudo systemctl status nginx`
