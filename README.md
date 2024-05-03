@@ -233,7 +233,7 @@ Now exit the MySQL shell with:
 
 `mysql -u example_user -p`
 
-    Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. 
+Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. 
     
 * After logging in to the MySQL console, confirm that you have access to the example_database database:
 
@@ -252,11 +252,7 @@ Now exit the MySQL shell with:
 
 * Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
 
-        CREATE TABLE example_database.todo_list (
-        mysql> 	item_id INT AUTO_INCREMENT,
-        mysql> 	content VARCHAR(255),
-        mysql> 	PRIMARY KEY(item_id)
-        mysql> );
+        CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT, content VARCHAR(255), PRIMARY KEY(item_id));
 
 * Insert a few rows of content in the test table. You might want to repeat the next command a few times, using different VALUES:
 
@@ -311,32 +307,3 @@ You should see a page like this, showing the content you’ve inserted in your t
 ![EC2](./images/todo_browser23.jpeg)
 
 ### Well done, Your PHP environment is ready to connect and interact with your MySQL server.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
